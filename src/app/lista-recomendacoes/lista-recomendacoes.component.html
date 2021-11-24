@@ -1,0 +1,10 @@
+<mat-accordion *ngIf="recomendacoes.length > 0">
+  <mat-expansion-panel *ngFor="let rec of recomendacoes"> <!--* indica que isso mexe na DOM-->
+    <mat-expansion-panel-header>{{rec.recomendacao}}</mat-expansion-panel-header>
+    <mat-action-row>
+
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<p *ngIf="recomendacoes.length <= 0" class="may-body-1" style="text-align:center">Nenhuma recomendação cadastrada</p>

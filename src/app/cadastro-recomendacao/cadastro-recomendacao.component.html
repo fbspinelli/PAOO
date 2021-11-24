@@ -1,0 +1,20 @@
+<mat-card>
+  <form (submit)="onAdicionarRecomendacao(clienteForm)" #clienteForm="ngForm">
+    <mat-form-field appearence="fill">
+      <mat-label>Digite a recomendação</mat-label>
+      <input
+        matInput
+        type="text"
+        name="recomendacao"
+        required
+        minlength="3"
+        ngModel
+      />
+      <button matSuffix mat-icon-button>
+        <mat-icon>close</mat-icon>
+      </button>
+      <mat-error>Pelo menos 3 caracteres</mat-error>
+    </mat-form-field>
+    <button mat-stroked-button color="primary" >Inserir recomendação</button>
+  </form>
+</mat-card>
